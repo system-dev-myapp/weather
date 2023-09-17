@@ -1,0 +1,78 @@
+.layout-header {
+    margin-top: 40px;
+
+    .temperature {
+        display        : flex;
+        justify-content: space-between;
+
+        div {
+            display    : flex;
+            align-items: center;
+            gap        : 10px;
+
+            button {
+                font-size      : 1.8rem;
+                width          : 40px;
+                height         : 40px;
+                display        : flex;
+                border-radius  : 8px;
+                justify-content: center;
+                align-items    : center;
+                font-weight    : 600;
+                border         : 1px solid #ccc;
+
+                &.active {
+                    background-color: #ee4d2d;
+                    color           : #fff;
+                }
+
+                sub {
+                    bottom: 0.25rem;
+                }
+            }
+        }
+
+    }
+
+    .search {
+        margin-top: 30px;
+        position  : relative;
+
+        input {
+            font-size    : 1.4rem;
+            height       : 38px;
+            font-weight  : 500;
+            padding-left : 10px;
+            border-radius: 6px;
+        }
+
+        .render-result-and-related {
+            position                  : absolute;
+            border                    : 1px solid #ddd;
+            width                     : 100%;
+            border-top                : 0;
+            border-bottom-left-radius : 10px;
+            border-bottom-right-radius: 10px;
+            max-height                : 200px;
+            overflow                  : hidden;
+            box-shadow                : 2px 6px 6px 0 rgba(0, 0, 0, 0.06);
+
+            ul {
+                height    : 100%;
+                overflow  : auto;
+                font-size : 1.4rem;
+                max-height: 200px;
+
+                li {
+                    padding: 10px;
+
+                    &:hover {
+                        color           : #ee4d2d;
+                        background-color: rgba(0, 0, 0, 0.05);
+                    }
+                }
+            }
+        }
+    }
+
+}
