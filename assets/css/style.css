@@ -1,0 +1,33 @@
+#app {
+  font-size: 2rem;
+}
+#app .container .main-layout {
+  position: relative;
+  margin-top: 30px;
+}
+#app .container .main-layout .background {
+  position: absolute;
+  z-index: -1;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  border: #999;
+  border-radius: 5px;
+}
+#app .container .main-layout .background img,
+#app .container .main-layout .background video {
+  filter: blur(10px);
+  width: 100%;
+  object-fit: cover;
+}
+#app .container .main-layout .layout-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app .container .main-layout .layout-btn .weather-5days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */
