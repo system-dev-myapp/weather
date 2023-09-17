@@ -20,4 +20,20 @@ h6 {
   color: currentColor;
   padding: 0;
   margin: 0;
+}
+
+.col-custom-20 {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+g.layout-chinh .text .text-1 {
+  color: #fff;
+}
+g.layout-chinh.active {
+  color: #fff;
+}
+
+.layout-chinh-phu .text {
+  color: #f5f;
 }/*# sourceMappingURL=base.css.map */
