@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+}
+
+a,
+ul,
+li,
+i,
+b,
+strong,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  list-style: none;
+  text-decoration: none;
+  color: currentColor;
+  padding: 0;
+  margin: 0;
+}
+
+.col-custom-20 {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.layout-chinh .text .text-1 {
+  color: #fff;
+}
+.layout-chinh.active {
+  color: #fff;
+}
+
+.layout-chinh-phu .text {
+  color: #f5f;
+}/*# sourceMappingURL=base.css.map */
