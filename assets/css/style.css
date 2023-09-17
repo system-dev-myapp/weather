@@ -1,3 +1,12 @@
+.layout-btn .btn {
+  font-size: 1.6rem;
+  border: 1px solid;
+  min-width: 150px;
+}
+.layout-btn .btn:hover {
+  opacity: 0.8;
+}
+
 .layout-header {
   margin-top: 40px;
 }
@@ -69,7 +78,8 @@
 .main-layout {
   position: relative;
   margin-top: 30px;
-  font-size: 2rem;
+  font-size: 1.65rem;
+  letter-spacing: 1.3px;
 }
 .main-layout .background {
   position: absolute;
@@ -84,6 +94,7 @@
 .main-layout .background video {
   filter: blur(10px);
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -97,4 +108,9 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+}
+.main-layout .layout-btn .weather-5days > div div:first-child {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */
