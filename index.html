@@ -12,7 +12,9 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="/assets/css/base.css" />
+        <link rel="stylesheet" href="/assets/img/" />
+        <link rel="stylesheet" href="/assets/videos/" />
     </head>
     <body>
         <main id="app">
@@ -41,17 +43,65 @@
                 </section>
 
                 <!-- Layout render chinh -->
-                <section class="main-layout">
-                    <div class="layout-top">.</div>
-                    <div class="layout-btn"></div>
-                </section>
+                <div class="main-layout">
+                    <div class="background">
+                        <video
+                            src="./assets/videos/rain.mp4"
+                            autoplay
+                            loop
+                        ></video>
+                    </div>
+                    <div class="layout-top">
+                        <div class="weather-index-left col-6">
+                            <img src="/assets/img/116.webp" alt="" />
+                            <span>Partly cloudy</span>
+                        </div>
+                        <div class="weather-index-right col-6">
+                            <div>Wind: 6.0 mph</div>
+                            <div>Precip: 0.0 in</div>
+                            <div>Pressure: 29.7 in</div>
+                            <div>86.4 °f</div>
+                        </div>
+                    </div>
+                    <div class="layout-btn">
+                        <div class="weather-5days">
+                            <div class="day-1 col-custom-20">
+                                <div>mon</div>
+                                <img src="/assets/img/116.webp" alt="" />
+                                <div>82.3 °f</div>
+                            </div>
+                            <div class="day-2 col-custom-20">
+                                <div>mon</div>
+                                <img src="/assets/img/116.webp" alt="" />
+                                <div>82.3 °f</div>
+                            </div>
+                            <div class="day-3 col-custom-20">
+                                <div>mon</div>
+                                <img src="/assets/img/116.webp" alt="" />
+                                <div>82.3 °f</div>
+                            </div>
+                            <div class="day-4 col-custom-20">
+                                <div>mon</div>
+                                <img src="/assets/img/116.webp" alt="" />
+                                <div>82.3 °f</div>
+                            </div>
+                            <div class="day-5 col-custom-20">
+                                <div>mon</div>
+                                <img src="/assets/img/116.webp" alt="" />
+                                <div>82.3 °f</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
         <script src="./assets/js/search.js"></script>
         <script src="./assets/js/main.js"></script>
+
+        <script src="./assets/js/main.js"></script>
         <script
-            src="https://cdn.jsdelivr.net/npm/boo3tstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
         ></script>
