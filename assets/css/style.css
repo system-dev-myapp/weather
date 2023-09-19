@@ -125,6 +125,7 @@
 .layout-table .main-table .table tr th {
   height: 70px;
   text-align: center;
+  padding: 10px;
 }
 .layout-table .main-table .table tr th p {
   font-weight: 500;
