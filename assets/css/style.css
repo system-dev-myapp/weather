@@ -130,4 +130,21 @@
 .layout-table .main-table .table tr th p {
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.sub-table {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 20px 0 20px;
+  border-radius: 5px;
+}
+.sub-table tr {
+  width: 100%;
+}
+.sub-table tr td {
+  border: 1px #ccc solid;
+  padding: 14px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

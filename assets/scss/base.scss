@@ -38,3 +38,39 @@ h6 {
 }
 
 .bg-yellow {}
+
+html {
+    font-size: 62.5%;
+}
+
+a,
+ul,
+li,
+i,
+b,
+p,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    list-style     : none;
+    text-decoration: none;
+    color          : currentColor;
+    padding        : 0;
+    margin         : 0;
+}
+
+
+.col-custom-20 {
+    flex : 0 0 auto;
+    width: 20%;
+}
+
+.col-custom-table {
+    flex : 0 0 auto;
+    width: 11.111111111111%;
+
+}
