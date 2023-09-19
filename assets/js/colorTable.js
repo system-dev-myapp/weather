@@ -1,7 +1,9 @@
 // color of temperature max
 const temperatureMax = document.querySelector('.max');
-temperatureMax.setAttribute("style","background-color: #E4AD2B");
 
+temperatureMax.setAttribute("data-color","background-color: #E4AD2B");
+const colorC = temperatureMax.getAttribute("data-color");
+temperatureMax.setAttribute("style",colorC);
 
 
 // color of temperature min
@@ -29,5 +31,42 @@ maxWind.setAttribute("style","background-color: #A4F6E9");
 
 
 // color subtable
-let arr = [80 , 90 , 75 , 70];
+
+const nhietDo = [70 , 75 ,79 , 80 , 85 , 86 , 88 , 80];
+const Max= 90;
+const Min = 70;
+const Avg = 80;
+
+
+// temp
+const temp = document.querySelectorAll(".temp td") 
+for (let i=1 ; i<temp.length ; i++) {
+    temp[i].innerHTML=`<p>${nhietDo[i-1]} mph</p>`;
+}
+
+
+const colorTemp = document.querySelectorAll(".temp td p")
+for(let i=1 ; i<colorTemp.length ; i++) {
+    if((nhietDo[i-1] >= Min) && (nhietDo[i-1] <=(Avg-3))) {
+        temp[i].setAttribute("style","background-color: #E9D97E")
+    }
+    else if (nhietDo[i-1] > (Avg-3) && nhietDo[i-1] <= (Avg+2)) {
+        temp[i].setAttribute("style","background-color: #F1C151")
+    }else {
+        let x = `background-color: #E${10-i}AD2B`;
+        temp[i].setAttribute("style",x);
+    }
+}
+
+
+// color wind
+const Mwind = 6.9;
+let InnerMaxWind = document.querySelector(".max-wind")
+InnerMaxWind.innerHTML= `
+<p>
+    Max Wind: <br />
+    ${Mwind} mph
+</p>
+`
+
 
