@@ -1,113 +1,123 @@
+.layout-btn .btn {
+    font-size: 1.6rem;
+    border: 1px solid;
+    min-width: 150px;
+}
+.layout-btn .btn:hover {
+    opacity: 0.8;
+}
+
 .layout-header {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 .layout-header .temperature {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .layout-header .temperature div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .layout-header .temperature div button {
-  font-size: 1.8rem;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  border: 1px solid #ccc;
+    font-size: 1.8rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: 1px solid #ccc;
 }
 .layout-header .temperature div button.active {
-  background-color: #ee4d2d;
-  color: #fff;
+    background-color: #ee4d2d;
+    color: #fff;
 }
 .layout-header .temperature div button sub {
-  bottom: 0.25rem;
+    bottom: 0.25rem;
 }
 .layout-header .search {
-  margin-top: 30px;
-  position: relative;
+    margin-top: 30px;
+    position: relative;
 }
 .layout-header .search input {
-  font-size: 1.4rem;
-  height: 38px;
-  font-weight: 500;
-  padding-left: 10px;
-  border-radius: 6px;
+    font-size: 1.4rem;
+    height: 38px;
+    font-weight: 500;
+    padding-left: 10px;
+    border-radius: 6px;
 }
 .layout-header .search .render-result-and-related {
-  position: absolute;
-  border: 1px solid #ddd;
-  width: 100%;
-  border-top: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  max-height: 200px;
-  overflow: hidden;
-  background: #fff;
-  z-index: 100000;
-  box-shadow: 2px 6px 6px 0 rgba(0, 0, 0, 0.06);
+    position: absolute;
+    border: 1px solid #ddd;
+    width: 100%;
+    border-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-height: 200px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 100000;
+    box-shadow: 2px 6px 6px 0 rgba(0, 0, 0, 0.06);
 }
 .layout-header .search .render-result-and-related ul {
-  height: 100%;
-  overflow: auto;
-  font-size: 1.4rem;
-  max-height: 200px;
+    height: 100%;
+    overflow: auto;
+    font-size: 1.4rem;
+    max-height: 200px;
 }
 .layout-header .search .render-result-and-related ul li {
-  padding: 10px;
+    padding: 10px;
 }
 .layout-header .search .render-result-and-related ul li:hover {
-  color: #ee4d2d;
-  background-color: rgba(0, 0, 0, 0.05);
+    color: #ee4d2d;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .main-layout {
-  position: relative;
-  margin-top: 30px;
-  font-size: 2rem;
+    position: relative;
+    margin-top: 30px;
+    font-size: 1.65rem;
+    letter-spacing: 1.3px;
 }
 .main-layout .background {
-  position: absolute;
-  z-index: -1;
-  height: auto;
-  overflow: hidden;
-  width: 100%;
-  border: #999;
-  border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    border: #999;
+    border-radius: 5px;
 }
 .main-layout .background img,
 .main-layout .background video {
-  filter: blur(10px);
-  width: 100%;
-  object-fit: cover;
+    filter: blur(10px);
+    width: 100%;
+    object-fit: cover;
 }
 .main-layout .layout-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-layout .layout-btn .weather-5days {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .sub-table {
-  width: 100%;
-  border: 1px solid #ccc;
-  font-size: 1.2rem;
-  font-weight: 600;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 .sub-table tr {
-  width: 100%;
+    width: 100%;
 }
 .sub-table tr td {
-  border: 1px #ccc solid;
-  padding: 14px;
-}/*# sourceMappingURL=style.css.map */
+    border: 1px #ccc solid;
+    padding: 14px;
+} /*# sourceMappingURL=style.css.map */

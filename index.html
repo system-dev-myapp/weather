@@ -43,16 +43,18 @@
                 </section>
 
                 <!-- Layout render chinh -->
-                <div class="main-layout">
-                    <div class="background">
+                <div class="main-layout text-light">
+                    <div class="background h-100">
                         <video
                             src="./assets/videos/rain.mp4"
                             autoplay
                             loop
                             muted
                         ></video>
+
+                        <div class="overlay"></div>
                     </div>
-                    <div class="layout-top">
+                    <div class="layout-top py-5 text-center">
                         <div class="weather-index-left col-6">
                             <img src="/assets/img/116.webp" alt="" />
                             <span>Partly cloudy</span>
@@ -61,11 +63,13 @@
                             <div>Wind: 6.0 mph</div>
                             <div>Precip: 0.0 in</div>
                             <div>Pressure: 29.7 in</div>
-                            <div>86.4 °f</div>
+                            <div class="h1 mt-3">86.4 °f</div>
                         </div>
                     </div>
-                    <div class="layout-btn">
-                        <div class="weather-5days">
+                    <div class="layout-btn pb-5">
+                        <div
+                            class="weather-5days justify-content-between text-center"
+                        >
                             <div class="day-1 col-custom-20">
                                 <div>mon</div>
                                 <img src="/assets/img/116.webp" alt="" />
