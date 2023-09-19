@@ -143,8 +143,15 @@
 .sub-table tr {
   width: 100%;
 }
+.sub-table tr th {
+  border: 1px #ccc solid;
+  padding: 14px;
+  text-align: center;
+}
 .sub-table tr td {
   border: 1px #ccc solid;
   padding: 14px;
   text-align: center;
+  min-height: 50px;
+  line-height: 50px;
 }/*# sourceMappingURL=style.css.map */
