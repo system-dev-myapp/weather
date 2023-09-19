@@ -69,4 +69,13 @@ InnerMaxWind.innerHTML= `
 </p>
 `
 
+const gio = [3.4 ,4.3 ,2.2 ,3.8 ,4.7 ,6.1 ,6.3 ,2];
+
+const listWind = document.querySelectorAll(".wind")
+listWind.forEach(function(element) {
+    element[i+1].innerHTML = `
+    <p>5.4 mph</p>
+    `
+})
+
 
