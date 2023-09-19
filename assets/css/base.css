@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 a,
@@ -15,34 +15,29 @@ h3,
 h4,
 h5,
 h6 {
-    list-style: none;
-    text-decoration: none;
-    color: currentColor;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: currentColor;
+  padding: 0;
+  margin: 0;
 }
 
 .col-custom-20 {
-    flex: 0 0 auto;
-    width: 20%;
-}
-
-.col-custom-table {
-    flex: 0 0 auto;
-    width: 11.111111111%;
+  flex: 0 0 auto;
+  width: 20%;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 a,
@@ -58,23 +53,19 @@ h3,
 h4,
 h5,
 h6 {
-    list-style: none;
-    text-decoration: none;
-    color: currentColor;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: currentColor;
+  padding: 0;
+  margin: 0;
 }
 
 .col-custom-20 {
-    flex: 0 0 auto;
-    width: 20%;
+  flex: 0 0 auto;
+  width: 20%;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-} /*# sourceMappingURL=base.css.map */
+.col-custom-table {
+  flex: 0 0 auto;
+  width: 11.1111111111%;
+}/*# sourceMappingURL=base.css.map */
