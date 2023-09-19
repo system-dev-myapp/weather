@@ -25,4 +25,9 @@ h6 {
 .col-custom-20 {
   flex: 0 0 auto;
   width: 20%;
+}
+
+.col-custom-table {
+  flex: 0 0 auto;
+  width: 11.111111111%;
 }/*# sourceMappingURL=base.css.map */

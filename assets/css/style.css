@@ -84,8 +84,7 @@
 .main-layout .background video {
   filter: blur(10px);
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-layout .layout-top {
   display: flex;
@@ -97,4 +96,18 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+}
+
+.sub-table {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.sub-table tr {
+  width: 100%;
+}
+.sub-table tr td {
+  border: 1px #ccc solid;
+  padding: 14px;
 }/*# sourceMappingURL=style.css.map */

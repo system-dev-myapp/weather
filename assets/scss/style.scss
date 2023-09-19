@@ -116,3 +116,23 @@
         }
     }
 }
+
+.sub-table {
+    width      : 100%;
+    border     : 1px solid #ccc;
+    font-size  : 1.2rem;
+    font-weight: 600;
+
+
+    tr {
+        width: 100%;
+
+        td {
+            border : 1px #ccc solid;
+            padding: 14px;
+        }
+    }
+
+
+
+}
