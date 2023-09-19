@@ -4,7 +4,6 @@
         border   : 1px solid;
         min-width: 150px;
 
-
         &:hover {
             opacity: 0.8;
         }
@@ -44,7 +43,6 @@
                 }
             }
         }
-
     }
 
 
@@ -90,7 +88,6 @@
             }
         }
     }
-
 }
 
 .main-layout {
@@ -141,7 +138,6 @@
     }
 }
 
-
 .layout-table {
     .main-table {
         .table {
@@ -151,6 +147,7 @@
             tr {
                 &:hover {
                     background-color: #ddd;
+                    cursor          : pointer;
                 }
 
                 th {
@@ -166,37 +163,37 @@
             }
         }
     }
-}
 
-.sub-table {
-    width        : 100%;
-    border       : 1px solid #ccc;
-    font-size    : 1.2rem;
-    font-weight  : 600;
-    margin       : 20px 0 20px;
-    border-radius: 5px;
+    .sub-table {
+        width        : 100%;
+        border       : 1px solid #ccc;
+        font-size    : 1.2rem;
+        font-weight  : 600;
+        margin       : 20px 0 20px;
+        border-radius: 5px;
+        box-shadow   : 0 0 10px rgba(0, 0, 0, 0.5);
 
+        tr {
+            width: 100%;
 
+            &:hover {
+                background-color: #ddd;
+                cursor          : pointer;
+            }
 
-    tr {
-        width: 100%;
+            th {
+                border    : 1px #ccc solid;
+                padding   : 14px;
+                text-align: center;
+            }
 
-        th {
-            border    : 1px #ccc solid;
-            padding   : 14px;
-            text-align: center;
-        }
-
-
-        td {
-            border     : 1px #ccc solid;
-            padding    : 14px;
-            text-align : center;
-            min-height : 50px;
-            line-height: 50px;
+            td {
+                border     : 1px #ccc solid;
+                padding    : 14px;
+                text-align : center;
+                min-height : 50px;
+                line-height: 50px;
+            }
         }
     }
-
-
-
 }

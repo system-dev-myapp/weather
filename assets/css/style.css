@@ -95,8 +95,7 @@
   filter: blur(10px);
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .main-layout .layout-top {
   display: flex;
@@ -121,6 +120,7 @@
 }
 .layout-table .main-table .table tr:hover {
   background-color: #ddd;
+  cursor: pointer;
 }
 .layout-table .main-table .table tr th {
   height: 70px;
@@ -131,24 +131,28 @@
   font-weight: 500;
   font-size: 1.5rem;
 }
-
-.sub-table {
+.layout-table .sub-table {
   width: 100%;
   border: 1px solid #ccc;
   font-size: 1.2rem;
   font-weight: 600;
   margin: 20px 0 20px;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.sub-table tr {
+.layout-table .sub-table tr {
   width: 100%;
 }
-.sub-table tr th {
+.layout-table .sub-table tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.layout-table .sub-table tr th {
   border: 1px #ccc solid;
   padding: 14px;
   text-align: center;
 }
-.sub-table tr td {
+.layout-table .sub-table tr td {
   border: 1px #ccc solid;
   padding: 14px;
   text-align: center;
