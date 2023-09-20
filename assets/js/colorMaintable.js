@@ -26,7 +26,6 @@ fetch(
       `;
 
         //min temperature
-
         const minTemp = document.querySelector("#min-temp");
         minTemp.innerHTML = `
       <p>Min: <br />  ${data.forecast.forecastday[0].day.mintemp_f}°f</p>
