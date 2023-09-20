@@ -1,81 +1,95 @@
-// color of temperature max
-const temperatureMax = document.querySelector('.max');
+// // color of temperature max
+// const temperatureMax = document.querySelector('.max');
 
-temperatureMax.setAttribute("data-color","background-color: #E4AD2B");
-const colorC = temperatureMax.getAttribute("data-color");
-temperatureMax.setAttribute("style",colorC);
-
-
-// color of temperature min
-const temperatureMin = document.querySelector('.min');
-temperatureMin.setAttribute("style","background-color: #E9D97E");
+// temperatureMax.setAttribute("data-color","background-color: #E4AD2B");
+// const colorC = temperatureMax.getAttribute("data-color");
+// temperatureMax.setAttribute("style",colorC);
 
 
-
-// color of avg
-const avg = document.querySelector('.avg');
-avg.setAttribute("style","background-color: #F1C151");
+// // color of temperature min
+// const temperatureMin = document.querySelector('.min');
+// temperatureMin.setAttribute("style","background-color: #E9D97E");
 
 
 
-// precip
-const precip = document.querySelector('.precip');
-precip.setAttribute("style","background-color: #0899CA");
+// // color of avg
+// const avg = document.querySelector('.avg');
+// avg.setAttribute("style","background-color: #F1C151");
 
 
 
-// max wind
-const maxWind = document.querySelector('.max-wind');
-maxWind.setAttribute("style","background-color: #A4F6E9");
+// // precip
+// const precip = document.querySelector('.precip');
+// precip.setAttribute("style","background-color: #0899CA");
 
 
 
-// color subtable
-
-const nhietDo = [70 , 75 ,79 , 80 , 85 , 86 , 88 , 80];
-const Max= 90;
-const Min = 70;
-const Avg = 80;
+// // max wind
+// const maxWind = document.querySelector('.max-wind');
+// maxWind.setAttribute("style","background-color: #A4F6E9");
 
 
-// temp
-const temp = document.querySelectorAll(".temp td") 
-for (let i=1 ; i<temp.length ; i++) {
-    temp[i].innerHTML=`<p>${nhietDo[i-1]} mph</p>`;
-}
+
+// // color subtable
+
+// const nhietDo = [70 , 75 ,79 , 80 , 85 , 86 , 88 , 80];
+// const Max= 90;
+// const colorMax = document.querySelector(".mac")
+// colorMax.innerHTML = `
+// <p>
+// Max: <br />
+// ${Max}°f
+// </p>
+// `
+// const Min = 70;
+// const Avg = 80;
 
 
-const colorTemp = document.querySelectorAll(".temp td p")
-for(let i=1 ; i<colorTemp.length ; i++) {
-    if((nhietDo[i-1] >= Min) && (nhietDo[i-1] <=(Avg-3))) {
-        temp[i].setAttribute("style","background-color: #E9D97E")
-    }
-    else if (nhietDo[i-1] > (Avg-3) && nhietDo[i-1] <= (Avg+2)) {
-        temp[i].setAttribute("style","background-color: #F1C151")
-    }else {
-        let x = `background-color: #E${10-i}AD2B`;
-        temp[i].setAttribute("style",x);
-    }
-}
+// // temp
+// const temp = document.querySelectorAll(".temp td") 
+// for (let i=1 ; i<temp.length ; i++) {
+//     temp[i].innerHTML=`<p>${nhietDo[i-1]} mph</p>`
+// }
+
+// for(let i=1 ; i<colorTemp.length ; i++) {
+//     if((nhietDo[i-1] >= Min) && (nhietDo[i-1] <=(Avg-3))) {
+//         temp[i].setAttribute("style","background-color: #E9D97E")
+//     }
+//     else if (nhietDo[i-1] > (Avg-3) && nhietDo[i-1] <= (Avg+2)) {
+//         temp[i].setAttribute("style","background-color: #F1C151")
+//     }else {
+//         let x = `background-color: #E${10-i}AD2B`;
+//         temp[i].setAttribute("style",x);
+//     }
+// }
 
 
-// color wind
-const Mwind = 6.9;
-let InnerMaxWind = document.querySelector(".max-wind")
-InnerMaxWind.innerHTML= `
-<p>
-    Max Wind: <br />
-    ${Mwind} mph
-</p>
-`
+// // color wind
+// const Mwind = 6.9;
+// let InnerMaxWind = document.querySelector(".max-wind")
+// InnerMaxWind.innerHTML= `
+// <p>
+//     Max Wind: <br />
+//     ${Mwind} mph
+// </p>
+// `
 
-const gio = [3.4 ,4.3 ,2.2 ,3.8 ,4.7 ,6.1 ,6.3 ,2];
+// const gio = [3.4 ,4.3 ,2.2 ,3.8 ,4.7 ,6.1 ,6.3 ,2];
 
-const listWind = document.querySelectorAll(".wind")
-listWind.forEach(function(element) {
-    element[i+1].innerHTML = `
-    <p>5.4 mph</p>
-    `
-})
+// const listWind = document.querySelectorAll(".wind td")
+// for(let i=1 ; i < listWind.length ; i++){
+//     listWind[i].innerHTML = `
+//     <p>${gio[i-1]} mph</p>
+//     `
+// }
+
+// for(let i=1 ; i<listWind.length ; i++) {
+//     if(gio[i-1] < 5 ) {
+//         listWind[i].setAttribute("style","background-color: #9BF6F3")
+//     }
+//     else {
+//         listWind[i].setAttribute("style","background-color: #A4F6E9")
+//     }
+// }
 
 
