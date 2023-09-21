@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Thoi Tiet</title>
+
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -43,14 +44,27 @@
 
                 <!-- Layout render chinh -->
                 <div class="main-layout text-light">
-                    <div class="video-weather background h-100">
-                        <video src="" autoplay loop muted></video>
+                    <div class="background h-100">
+                        <video
+                            src="./assets/videos/rain.mp4"
+                            autoplay
+                            loop
+                            muted
+                        ></video>
 
                         <div class="overlay"></div>
                     </div>
                     <div class="layout-top py-5 text-center">
-                        <div class="weather-index-left col-6"></div>
-                        <div class="weather-index-right col-6"></div>
+                        <div class="weather-index-left col-6">
+                            <img src="/assets/img/116.webp" alt="" />
+                            <span>Partly cloudy</span>
+                        </div>
+                        <div class="weather-index-right col-6">
+                            <div>Wind: 6.0 mph</div>
+                            <div>Precip: 0.0 in</div>
+                            <div>Pressure: 29.7 in</div>
+                            <div class="h1 mt-3">86.4 °f</div>
+                        </div>
                     </div>
                     <div class="layout-btn pb-5">
                         <div
@@ -95,197 +109,12 @@
                         Next Day
                     </button>
                 </div>
-
-                <!-- table -->
-                <section class="layout-table">
-                    <div class="heading-table my-4">
-                        <h1>Today's Weather in</h1>
-                    </div>
-                    <div class="main-table" id="render-result">
-                        <table class="table table-bordered">
-                            <tr>
-                                <th class="col col-2">
-                                    <p>Sunrise: 05:44 AM</p>
-                                    <p>Sunset: 05:58 PM</p>
-                                </th>
-                                <th class="col col-2">
-                                    <p>Moonrise: 07:21 AM</p>
-                                    <p>Moonset: 07:19 PM</p>
-                                </th>
-                                <th class="max">
-                                    <p>
-                                        Max: <br />
-                                        88P.2 °f
-                                    </p>
-                                </th>
-                                <th class="min">
-                                    <p>
-                                        Min: <br />
-                                        75.9 °f
-                                    </p>
-                                </th>
-                                <th class="avg">
-                                    <p>
-                                        Avg: <br />
-                                        80.6 °f
-                                    </p>
-                                </th>
-                                <th class="precip">
-                                    <p>
-                                        Precip: <br />
-                                        0.10 in
-                                    </p>
-                                </th>
-                                <th class="max-wind">
-                                    <p>
-                                        max-wind: <br />
-                                        6.9
-                                    </p>
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="sub-table" id="render-data">
-                        <table class="table-layout w-100">
-                            <tbody>
-                                <tr class="TimeDate">
-                                    <th class="col col-custom-table"></th>
-                                    <th class="col col-custom-table"></th>
-                                    <th class="col col-custom-table"></th>
-                                    <th class="col col-custom-table"></th>
-                                    <th class="col col-custom-table"></th>
-                                    <th class="col col-custom-table"></th>
-                                    <th class="col col-custom-table"></th>
-                                    <th class="col col-custom-table"></th>
-                                    <th class="col col-custom-table"></th>
-                                </tr>
-
-                                <tr>
-                                    <td class="col col-custom-table">
-                                        <p>Icon</p>
-                                    </td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                </tr>
-
-                                <tr class="temp">
-                                    <td class="col col-custom-table">
-                                        <p>Temp</p>
-                                    </td>
-                                    <td class="col col-custom-table">
-                                        <p>78.7°f</p>
-                                    </td>
-                                    <td class="col col-custom-table">
-                                        <p>78.7°f</p>
-                                    </td>
-                                    <td class="col col-custom-table">
-                                        <p>78.7°f</p>
-                                    </td>
-                                    <td class="col col-custom-table">
-                                        <p>78.7°f</p>
-                                    </td>
-                                    <td class="col col-custom-table">
-                                        <p>78.7°f</p>
-                                    </td>
-                                    <td class="col col-custom-table">
-                                        <p>78.7°f</p>
-                                    </td>
-                                    <td class="col col-custom-table">
-                                        <p>78.7°f</p>
-                                    </td>
-                                    <td class="col col-custom-table">
-                                        <p>78.7°f</p>
-                                    </td>
-                                </tr>
-
-                                <tr class="wind">
-                                    <td class="col col-custom-table">
-                                        <p>Wind</p>
-                                    </td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                </tr>
-
-                                <tr class="Precip">
-                                    <td class="col col-custom-table">
-                                        <p>Precip</p>
-                                    </td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                </tr>
-
-                                <tr class="Cloud">
-                                    <td class="col col-custom-table">
-                                        <p>Cloud</p>
-                                    </td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                </tr>
-
-                                <tr class="Humidity">
-                                    <td class="col col-custom-table">
-                                        <p>Humidity</p>
-                                    </td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                </tr>
-
-                                <tr class="Pressure">
-                                    <td class="col col-custom-table">
-                                        <p>Pressure</p>
-                                    </td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                    <td class="col col-custom-table"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
             </div>
         </main>
 
         <script src="./assets/js/search.js"></script>
-        <script src="./assets/js/colorTable.js"></script>
         <script src="./assets/js/main.js"></script>
-        <script src="./assets/js/colorTable.js"></script>
-        <script src="./assets/js/colorMaintable.js"></script>
+
         <script src="./assets/js/main.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

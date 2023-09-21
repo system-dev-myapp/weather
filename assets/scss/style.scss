@@ -4,6 +4,7 @@
         border   : 1px solid;
         min-width: 150px;
 
+
         &:hover {
             opacity: 0.8;
         }
@@ -43,6 +44,7 @@
                 }
             }
         }
+
     }
 
 
@@ -88,6 +90,7 @@
             }
         }
     }
+
 }
 
 .main-layout {
@@ -133,66 +136,6 @@
                     font-weight: 600;
                     font-style : italic;
                 }
-            }
-        }
-    }
-}
-
-.layout-table {
-    .main-table {
-        .table {
-            width     : 100%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-            tr {
-                &:hover {
-                    background-color: #ddd;
-                    cursor          : pointer;
-                }
-
-                th {
-                    height    : 70px;
-                    text-align: center;
-                    padding   : 10px;
-
-                    p {
-                        font-weight: 500;
-                        font-size  : 1.5rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .sub-table {
-        width        : 100%;
-        border       : 1px solid #ccc;
-        font-size    : 1.2rem;
-        font-weight  : 600;
-        margin       : 20px 0 20px;
-        border-radius: 5px;
-        box-shadow   : 0 0 10px rgba(0, 0, 0, 0.5);
-
-        tr {
-            width: 100%;
-
-            &:hover {
-                background-color: #ddd;
-                cursor          : pointer;
-            }
-
-            th {
-                border    : 1px #ccc solid;
-                padding   : 14px;
-                text-align: center;
-            }
-
-            td {
-                border     : 1px #ccc solid;
-                padding    : 14px;
-                text-align : center;
-                min-height : 50px;
-                line-height: 50px;
             }
         }
     }
