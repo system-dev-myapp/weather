@@ -1,4 +1,4 @@
-// // color of temperature max
+// color of temperature max
 // const temperatureMax = document.querySelector('.max');
 
 // temperatureMax.setAttribute("data-color","background-color: #E4AD2B");
@@ -58,7 +58,7 @@
 
 // const gio = [3.4, 4.3, 2.2, 3.8, 4.7, 6.1, 6.3, 2];
 
-// // color subtable
+// color subtable
 
 // const nhietDo = [70 , 75 ,79 , 80 , 85 , 86 , 88 , 80];
 // const Max= 90;
@@ -90,7 +90,7 @@
 //     }
 // }
 
-// // color wind
+// color wind
 // const Mwind = 6.9;
 // let InnerMaxWind = document.querySelector(".max-wind")
 // InnerMaxWind.innerHTML= `

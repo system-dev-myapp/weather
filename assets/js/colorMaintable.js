@@ -22,7 +22,7 @@ fetch(
         //Max temperature
         const maxTemp = document.querySelector("#max-temp");
         maxTemp.innerHTML = `
-      <p>Max: <br />  ${data.forecast.forecastday[0].day.maxtemp_f}°f</p>
+          <p>Max: <br />  ${data.forecast.forecastday[0].day.maxtemp_f}°F</p>
       `;
 
         //min temperature
@@ -43,7 +43,7 @@ fetch(
       <p>Precip: <br />  ${data.forecast.forecastday[0].day.totalprecip_in} in</p>
       `;
 
-        // max wind
+        //max wind
         const maxWind = document.querySelector("#max-wind");
         maxWind.innerHTML = `
       <p>Max Wind: <br />  ${data.forecast.forecastday[0].day.maxwind_mph} mph</p>
