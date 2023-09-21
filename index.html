@@ -44,27 +44,14 @@
 
                 <!-- Layout render chinh -->
                 <div class="main-layout text-light">
-                    <div class="background h-100">
-                        <video
-                            src="./assets/videos/rain.mp4"
-                            autoplay
-                            loop
-                            muted
-                        ></video>
+                    <div class="video-weather background h-100">
+                        <video src="" autoplay loop muted></video>
 
                         <div class="overlay"></div>
                     </div>
                     <div class="layout-top py-5 text-center">
-                        <div class="weather-index-left col-6">
-                            <img src="/assets/img/116.webp" alt="" />
-                            <span>Partly cloudy</span>
-                        </div>
-                        <div class="weather-index-right col-6">
-                            <div>Wind: 6.0 mph</div>
-                            <div>Precip: 0.0 in</div>
-                            <div>Pressure: 29.7 in</div>
-                            <div class="h1 mt-3">86.4 °f</div>
-                        </div>
+                        <div class="weather-index-left col-6"></div>
+                        <div class="weather-index-right col-6"></div>
                     </div>
                     <div class="layout-btn pb-5">
                         <div
@@ -117,45 +104,14 @@
                     </div>
                     <div class="main-table">
                         <table class="table table-bordered">
-                            <tr>
-                                <th class="col col-2">
-                                    <p>Sunrise: 05:44 AM</p>
-                                    <p>Sunset: 05:58 PM</p>
-                                </th>
-                                <th class="col col-2">
-                                    <p>Moonrise: 07:21 AM</p>
-                                    <p>Moonset: 07:19 PM</p>
-                                </th>
-                                <th class="max">
-                                    <p>
-                                        Max: <br />
-                                        88P.2 °f
-                                    </p>
-                                </th>
-                                <th class="min">
-                                    <p>
-                                        Min: <br />
-                                        75.9 °f
-                                    </p>
-                                </th>
-                                <th class="avg">
-                                    <p>
-                                        Avg: <br />
-                                        80.6 °f
-                                    </p>
-                                </th>
-                                <th class="precip">
-                                    <p>
-                                        Precip: <br />
-                                        0.10 in
-                                    </p>
-                                </th>
-                                <th class="max-wind">
-                                    <p>
-                                        max-wind: <br />
-                                        6.9
-                                    </p>
-                                </th>
+                            <tr class="mma">
+                                <th class="col col-2 Sun"></th>
+                                <th class="col col-2 Moon"></th>
+                                <th class="max"></th>
+                                <th class="min"></th>
+                                <th class="avg"></th>
+                                <th class="precip"></th>
+                                <th class="max-wind"></th>
                             </tr>
                         </table>
                     </div>
