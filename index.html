@@ -44,27 +44,14 @@
 
                 <!-- Layout render chinh -->
                 <div class="main-layout text-light">
-                    <div class="background h-100">
-                        <video
-                            src="./assets/videos/rain.mp4"
-                            autoplay
-                            loop
-                            muted
-                        ></video>
+                    <div class="video-weather background h-100">
+                        <video src="" autoplay loop muted></video>
 
                         <div class="overlay"></div>
                     </div>
                     <div class="layout-top py-5 text-center">
-                        <div class="weather-index-left col-6">
-                            <img src="/assets/img/116.webp" alt="" />
-                            <span>Partly cloudy</span>
-                        </div>
-                        <div class="weather-index-right col-6">
-                            <div>Wind: 6.0 mph</div>
-                            <div>Precip: 0.0 in</div>
-                            <div>Pressure: 29.7 in</div>
-                            <div class="h1 mt-3">86.4 °f</div>
-                        </div>
+                        <div class="weather-index-left col-6"></div>
+                        <div class="weather-index-right col-6"></div>
                     </div>
                     <div class="layout-btn pb-5">
                         <div
@@ -109,10 +96,154 @@
                         Next Day
                     </button>
                 </div>
+
+                <!-- table -->
+                <section class="layout-table">
+                    <div class="heading-table my-4">
+                        <h1>Today's Weather in</h1>
+                    </div>
+                    <div class="main-table">
+                        <table class="table table-bordered">
+                            <tr class="mma">
+                                <th class="col col-2 Sun"></th>
+                                <th class="col col-2 Moon"></th>
+                                <th class="max"></th>
+                                <th class="min"></th>
+                                <th class="avg"></th>
+                                <th class="precip"></th>
+                                <th class="max-wind"></th>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="sub-table" id="render-data">
+                        <table class="table-layout w-100">
+                            <tbody>
+                                <tr class="TimeDate">
+                                    <th class="col col-custom-table"></th>
+                                    <th class="col col-custom-table"></th>
+                                    <th class="col col-custom-table"></th>
+                                    <th class="col col-custom-table"></th>
+
+                                    <th class="col col-custom-table"></th>
+                                    <th class="col col-custom-table"></th>
+                                    <th class="col col-custom-table"></th>
+                                    <th class="col col-custom-table"></th>
+                                    <th class="col col-custom-table"></th>
+                                </tr>
+
+                                <tr class="Icon">
+                                    <td class="col col-custom-table">
+                                        <p>Icon</p>
+                                    </td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                </tr>
+
+                                <tr class="temp">
+                                    <td class="col col-custom-table">
+                                        <p>Temp</p>
+                                    </td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                </tr>
+
+                                <tr class="wind">
+                                    <td class="col col-custom-table">
+                                        <p>Wind</p>
+                                    </td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                </tr>
+
+                                <tr class="Precip">
+                                    <td class="col col-custom-table">
+                                        <p>Precip</p>
+                                    </td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                </tr>
+
+                                <tr class="Cloud">
+                                    <td class="col col-custom-table">
+                                        <p>Cloud</p>
+                                    </td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                </tr>
+
+                                <tr class="Humidity">
+                                    <td class="col col-custom-table">
+                                        <p>Humidity</p>
+                                    </td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                </tr>
+
+                                <tr class="Pressure">
+                                    <td class="col col-custom-table">
+                                        <p>Pressure</p>
+                                    </td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                    <td class="col col-custom-table"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
             </div>
         </main>
 
         <script src="./assets/js/search.js"></script>
+        <script src="./assets/js/colorTable.js"></script>
         <script src="./assets/js/main.js"></script>
 
         <script src="./assets/js/main.js"></script>
